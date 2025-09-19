@@ -1,4 +1,4 @@
-# 🎶 Music SaaS Application
+# Music SaaS Application
 
 A collaborative music streaming platform where users can upvote tracks, and the most popular ones get played first.  
 Built with **Next.js**, **NextAuth.js**, and **PostgreSQL**.
