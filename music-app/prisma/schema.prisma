@@ -1,16 +1,19 @@
 
 generator client {
-  provider = "prisma-client"
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
 model User{
   id String @id @default(uuid())
   name String
   email String
+  provider Provider 
   streams Stream[]
   upvotes Upvote[]
 }
@@ -19,6 +22,8 @@ model Stream{
   id String @id @default(uuid())
   type  StreamType
   active Boolean @default(true)
+  url String
+  extractedId String
   upvote Upvote[]
   userId String
   user User @relation(fields: [userId],references: [id])
