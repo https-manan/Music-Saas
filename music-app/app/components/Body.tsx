@@ -1,7 +1,6 @@
 export default function Body() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
-            {/* Hero Section */}
             <div className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
                 <h1 className="text-5xl font-bold text-gray-100 mb-4">
                     Welcome to StreamSync
@@ -14,13 +13,11 @@ export default function Body() {
                 </p>
             </div>
 
-            {/* Features Section */}
             <div className="max-w-6xl mx-auto px-6 py-16">
                 <h3 className="text-2xl font-bold text-gray-100 text-center mb-12">
                     Why Choose Us
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {/* Feature Card 1 */}
                     <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                         <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mb-4">
                             <svg className="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,7 +32,6 @@ export default function Body() {
                         </p>
                     </div>
 
-                    {/* Feature Card 2 */}
                     <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                         <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mb-4">
                             <svg className="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +46,6 @@ export default function Body() {
                         </p>
                     </div>
 
-                    {/* Feature Card 3 */}
                     <div className="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
                         <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center mb-4">
                             <svg className="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
