@@ -1,28 +1,23 @@
-# Music SaaS Application
+# Music Queue SaaS
 
-A collaborative music streaming platform where users can upvote tracks, and the most popular ones get played first.  
-Built with **Next.js**, **NextAuth.js**, and **PostgreSQL**.
-
----
+## Overview
+Music Queue SaaS is a Next.js application that allows users to add video links to a shared queue. Each link is processed so that only the audio plays when it reaches its turn in the queue. The app uses Prisma as the ORM and is designed to support multi-user SaaS functionality.
 
 ## Features
-- Stream music in real-time with a shared queue.  
-- Vote for your favorite tracks — the highest-voted ones play first.  
-- Supports 40–50 simultaneous users.  
-- Authentication with **NextAuth.js**.  
-- Data persistence powered by **PostgreSQL**.  
-- SaaS-ready architecture for scalability.  
-
----
+- Add video URLs to a shared playback queue  
+- Automatic playback when the queued item reaches its turn  
+- Real-time queue updates across all users  
+- User authentication and account management  
+- Subscription-based access for premium features  
+- Admin panel for queue and user management  
+- Persistent data storage using Prisma ORM
 
 ## Tech Stack
-- **Frontend**: [Next.js](https://nextjs.org/)  
-- **Authentication**: [NextAuth.js](https://next-auth.js.org/)  
-- **Database**: [PostgreSQL](https://www.postgresql.org/)  
-- **Backend**: API Routes in Next.js  
+- **Framework:** Next.js (App Router)
+- **ORM:** Prisma
+- **Database:** PostgreSQL
+- **Authentication:** NextAuth.js
+- **Styling:** Tailwind CSS
+- **Real-Time Updates:** WebSockets or Pusher
+- **Deployment:** Vercel or Docker
 
----
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/https-manan/Music-Saas.git
